@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 
 <html lang="hi">
 <head>
@@ -132,7 +131,7 @@ h1,h2,h3{line-height:1.25}
 .bonus h3{font-size:21px;margin:18px 0 7px}
 .bonus p{font-size:20px}
 .two-cols{
-    display:grid;grid-template-columns:1fr 1fr;gap:20px;
+  display:grid;grid-template-columns:1fr 1fr;gap:20px;
 }
 .compare{
   border-radius:18px;padding:18px 16px;border:2px solid;
@@ -182,7 +181,7 @@ h1,h2,h3{line-height:1.25}
   background:#f2fff1;border:2px solid #42b7ad;
   border-radius:20px;text-align:center;padding:34px 20px;
 }
-.final-box h2{font-size:34px;margin-bottom:22px}
+  .final-box h2{font-size:34px;margin-bottom:22px}
 .final-box p{font-size:22px}
 footer{
   background:#000;color:#fff;text-align:center;
@@ -192,39 +191,56 @@ footer h2{font-size:28px;color:#fff}
 footer p{font-size:20px;margin:22px 0}
 footer .support{font-size:23px;font-weight:900}
 footer .copy{border-top:1px solid #aaa;padding-top:16px;color:#ccc;font-size:17px}
-@media(max-width:600px){
-  .page{width:calc(100% - 40px)}
-  .top{font-size:17px}
-  .hero h1{font-size:42px}
-  .hero .green-title{font-size:38px}
-  .hero .sub{font-size:22px}
-  .title{font-size:35px}
-  .problem-grid,.six-grid,.two-cols{gap:16px}
-  .problem-card h3,.six-card h3{font-size:22px}
-  .problem-card p,.six-card p{font-size:18px}
-  .story p{font-size:21px}
-  .buyrow .now{font-size:40px}
-  .buybtn{flex-basis:270px;font-size:23px}
-  .sticky .price{font-size:40px}
-  .sticky .btn{flex-basis:270px}
-}
-@media(max-width:470px){
-  .page{width:calc(100% - 30px)}
-  .hero h1{font-size:35px}
-  .hero .green-title{font-size:32px}
-  .buybtn,.sticky .btn{flex-basis:215px;font-size:19px}
-  .sticky .price{font-size:34px}
-  .sticky .old{font-size:19px}
-  .problem-grid,.six-grid,.two-cols{grid-template-columns:1fr 1fr}
-  .problem-card .body,.six-card .body{padding:13px 8px 18px}
-  .problem-card h3,.six-card h3{font-size:20px}
+@media(max-width:700px){
+  html,body{width:100%;max-width:100%;overflow-x:hidden}
+  .page{width:calc(100% - 24px);max-width:660px}
+  .top{font-size:16px;padding:12px 8px}
+  .hero{padding:22px 0 18px}
+  .hero h1{font-size:34px}
+  .hero .green-title{font-size:31px}
+  .hero .sub{font-size:20px}
+  .title{font-size:31px}
+  .problem-grid,.six-grid{grid-template-columns:1fr;gap:16px}
+  .problem-card h3,.six-card h3{font-size:21px}
   .problem-card p,.six-card p{font-size:17px}
-  .checklist,.feature-card .body p,.feature-card .body li{font-size:19px}
-  .review-card{padding:22px 18px}
-  .review-card p{font-size:20px}
-  .timer{gap:8px}
-  .time{width:88px;height:88px}
-  .time b{font-size:31px}
+  .story p{font-size:19px}
+  .checklist,.feature-card .body p,.feature-card .body li{font-size:18px}
+  .review-card{padding:20px 18px}
+  .review-card p{font-size:18px}
+  .buyrow{
+    width:100%;margin:14px 0 0;padding:8px 0;gap:8px;
+    overflow:hidden;
+  }
+  .buyrow .now{font-size:30px;line-height:1;flex:0 0 auto}
+  .buyrow .old{font-size:18px;margin-left:4px}
+  .buybtn{
+    flex:1 1 auto;min-width:0;max-width:none;
+    padding:14px 8px;border-radius:16px;font-size:18px;
+    white-space:nowrap;
+  }
+  .sticky{padding:7px 8px}
+  .sticky .inner{width:100%;gap:7px}
+  .sticky .price{font-size:30px;flex:0 0 auto}
+  .sticky .old{font-size:17px;margin-left:4px}
+  .sticky .btn{flex:1 1 auto;min-width:0;max-width:none;font-size:18px;padding:14px 8px}
+  .bundle img{width:100%}
+  .bundle h2{font-size:27px}
+  .module-box h2,.bonus h2{font-size:27px}
+  .compare h2{font-size:23px}
+  .why h2{font-size:29px}
+  .pricebox h2{font-size:29px}
+  .faq-title{font-size:31px}
+  .final-box h2{font-size:29px}
+  .time{width:82px;height:82px}
+  .time b{font-size:29px}
+}
+@media(max-width:390px){
+  .page{width:calc(100% - 18px)}
+  .hero h1{font-size:31px}
+  .hero .green-title{font-size:28px}
+  .buyrow .now,.sticky .price{font-size:27px}
+  .buyrow .old,.sticky .old{font-size:15px}
+  .buybtn,.sticky .btn{font-size:16px;padding:13px 6px}
 }
 </style>
 </head>
@@ -265,7 +281,7 @@ footer .copy{border-top:1px solid #aaa;padding-top:16px;color:#ccc;font-size:17p
 <div class="problem-grid">
 <div class="problem-card">
 <img alt="" src="ChatGPT-Image-Feb-4-2026-12_25_02-PM-768x512.png"/>
-  <div class="body"><h3>💸 हर महीने पैसे खत्म</h3><p>Salary आते ही खत्म, कोई savings नहीं, emergency में loan लेना पड़ता हैं</p></div>
+<div class="body"><h3>💸 हर महीने पैसे खत्म</h3><p>Salary आते ही खत्म, कोई savings नहीं, emergency में loan लेना पड़ता हैं</p></div>
 </div>
 <div class="problem-card">
 <div class="body"><h3>😔 घर में कोई इज्जत नहीं</h3><p>Papa हमेशा टेंशन में, Mummy दुखी रहती है, रिश्तेदार पूछते रहते "क्या करते हो?"</p></div>
@@ -348,7 +364,7 @@ footer .copy{border-top:1px solid #aaa;padding-top:16px;color:#ccc;font-size:17p
 <div class="body">
 <h2>🎯 क्यों यह आपके लिए परफेक्ट है?</h2>
 <ul>
-<li>✅ कोई बड़ा निवेश नहीं</li>
+  <li>✅ कोई बड़ा निवेश नहीं</li>
 <li>✅ कोई ऑफिस/दुकान की जरूरत नहीं</li>
 <li>✅ कोई बॉस नहीं - अपने मालिक खुद</li>
 <li>✅ कोई डिग्री/एक्सपीरियंस नहीं चाहिए</li>
@@ -398,7 +414,7 @@ footer .copy{border-top:1px solid #aaa;padding-top:16px;color:#ccc;font-size:17p
 <div class="product">Product: Male Therapist Business Ebook</div>
 </div>
 <div class="review-card">
-  <div class="review-head"><div class="avatar">A</div><div><div style="font-size:24px">Anuj M. <span class="verified">✓ Verified Buyer</span></div><div class="stars">★★★★★</div><div class="date">May 12, 2025</div></div></div>
+<div class="review-head"><div class="avatar">A</div><div><div style="font-size:24px">Anuj M. <span class="verified">✓ Verified Buyer</span></div><div class="stars">★★★★★</div><div class="date">May 12, 2025</div></div></div>
 <p>मुझे बिल्कुल भरोसा नहीं था। "₹199 में क्या मिलेगा? Scam होगा।" बस curiosity में ले लिया। PDF खोली - 150+ pages! 📕 Photos, templates, scripts - सब detailed! 😳 Building की aunty को free service दी। Back pain relief मिला। Unhone ₹1500 दे दिए और 2 friends को refer किया। अब 2 week में 4 clients मिले। ₹20k कमा चुका हूं। 🔥</p>
 <div class="product">Product: Male Therapist Business Ebook</div>
 </div>
@@ -531,5 +547,4 @@ function tick(){
 tick();setInterval(tick,1000);
 </script>
 </body>
-  </html>
-  
+                                </html>
